@@ -4,6 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start:next": "next start",
+    "start:api": "node index.js",
+    "start": "npm run start:api",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
