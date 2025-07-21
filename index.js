@@ -75,6 +75,13 @@ app.get("/api/health", (req, res) => {
     timestamp: new Date().toISOString(),
     service: "AdIntel API" 
   });
+});
 
-}
-)
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`AdIntel API server running on port ${PORT}`);
+  console.log("Available endpoints:");
+  console.log("  GET  /api/search?q=query&platform=all|facebook|tiktok");
+  console.log("  GET  /api/ads/:id");
+  console.log("  GET  /api/health");
+});
