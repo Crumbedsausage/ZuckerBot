@@ -75,3 +75,6 @@ app.get("/api/health", (req, res) => {
     timestamp: new Date().toISOString(),
     service: "AdIntel API" 
   });
+
+}
+)
